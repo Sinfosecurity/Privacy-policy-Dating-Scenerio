@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for DatePilot (Dating Scenario) - Learn how we collect, use, and protect your information.">
+    <title>Privacy Policy - DatePilot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6B46C1;
+            --primary-dark: #553C9A;
+            --primary-light: #8B5CF6;
+            --secondary-color: #EC4899;
+            --accent-color: #F59E0B;
+            --text-dark: #1F2937;
+            --text-light: #6B7280;
+            --bg-light: #F9FAFB;
+            --bg-white: #FFFFFF;
+            --border-color: #E5E7EB;
+            --success-color: #10B981;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .last-updated {
+            margin-top: 20px;
+            font-size: 0.95em;
+            opacity: 0.9;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -40px auto 40px;
+            background: var(--bg-white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-menu {
+            position: sticky;
+            top: 20px;
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 2px solid var(--border-color);
+        }
+
+        .nav-menu h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            padding: 8px 16px;
+            background: white;
+            border-radius: 8px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .nav-links a:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(107, 70, 193, 0.3);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-top: 30px;
+            border-top: 3px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 700;
+        }
+
+        h2:first-of-type {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        h2 i {
+            font-size: 0.8em;
+            color: var(--primary-light);
+        }
+
+        h3 {
+            color: var(--text-dark);
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 i {
+            color: var(--secondary-color);
+            font-size: 0.9em;
+        }
+
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            color: var(--text-dark);
+            font-size: 1.05em;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: var(--text-dark);
+            font-size: 1.05em;
+        }
+
+        li strong {
+            color: var(--primary-color);
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+            margin: 25px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .info-card.warning {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left-color: var(--accent-color);
+        }
+
+        .info-card.success {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left-color: var(--success-color);
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(107, 70, 193, 0.3);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+            padding-top: 0;
+            justify-content: center;
+        }
+
+        .contact-section h2 i {
+            color: white;
+        }
+
+        .contact-section p {
+            color: rgba(255,255,255,0.95);
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .contact-section a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 12px;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-section a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 3px solid var(--border-color);
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+
+        .footer p {
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                padding: 30px 20px;
+                margin: -30px 10px 20px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .nav-links a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fade in animation for sections */
+        section {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+            <p class="subtitle">DatePilot (Dating Scenario)</p>
+            <div class="last-updated">
+                <i class="fas fa-calendar-alt"></i>
+                <strong>Last Updated:</strong> December 25, 2025
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="nav-menu">
+            <h3><i class="fas fa-list"></i> Quick Navigation</h3>
+            <div class="nav-links">
+                <a href="#introduction">Introduction</a>
+                <a href="#information-collect">Information We Collect</a>
+                <a href="#how-we-use">How We Use</a>
+                <a href="#ai-services">AI Services</a>
+                <a href="#data-sharing">Data Sharing</a>
+                <a href="#security">Security</a>
+                <a href="#your-rights">Your Rights</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <section id="introduction">
+            <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+            <p>DatePilot ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App"). Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access or use the App.</p>
+        </section>
+
+        <section id="information-collect">
+            <h2><i class="fas fa-database"></i> Information We Collect</h2>
+            
+            <h3><i class="fas fa-user-edit"></i> Information You Provide to Us</h3>
+            <p>We collect information that you voluntarily provide to us when you:</p>
+            <ul>
+                <li><strong>Account Information:</strong> When you create an account or use our App, we may collect your name, email address, and other profile information you choose to provide.</li>
+                <li><strong>User Content:</strong>
+                    <ul>
+                        <li>Profile photos and images you upload for profile review</li>
+                        <li>Screenshots you submit for analysis</li>
+                        <li>Text content you provide for AI coaching and scenario generation</li>
+                        <li>Voice recordings when using Voice Mode (with your consent)</li>
+                    </ul>
+                </li>
+                <li><strong>Subscription Information:</strong> If you purchase a subscription, we collect payment information through our third-party payment processors (Apple App Store, Google Play Store, and Adapty).</li>
+                <li><strong>Communication Data:</strong> Any messages, feedback, or correspondence you send to us.</li>
+            </ul>
+
+            <h3><i class="fas fa-mobile-alt"></i> Information Collected Automatically</h3>
+            <ul>
+                <li><strong>Device Information:</strong> We may collect information about your device, including device type, operating system, unique device identifiers, and mobile network information.</li>
+                <li><strong>Usage Data:</strong> We collect information about how you interact with our App, including features used, time spent, and actions taken.</li>
+                <li><strong>Analytics Data:</strong> We may use analytics services (such as Firebase Analytics) to collect information about App usage, crashes, and performance.</li>
+            </ul>
+
+            <h3><i class="fas fa-plug"></i> Information from Third-Party Services</h3>
+            <ul>
+                <li><strong>Adapty:</strong> We use Adapty to manage subscriptions and in-app purchases. Adapty may collect information about your subscription status and purchase history.</li>
+                <li><strong>OpenAI:</strong> When you use AI features, your content is sent to OpenAI for processing. We do not store your content on OpenAI's servers beyond what is necessary for processing.</li>
+            </ul>
+        </section>
+
+        <section id="how-we-use">
+            <h2><i class="fas fa-cogs"></i> How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ol>
+                <li><strong>Provide and Improve Our Services:</strong>
+                    <ul>
+                        <li>Process and analyze your profile photos and screenshots</li>
+                        <li>Generate AI-powered coaching responses and scenarios</li>
+                        <li>Deliver personalized dating advice and content</li>
+                    </ul>
+                </li>
+                <li><strong>Manage Subscriptions:</strong>
+                    <ul>
+                        <li>Process subscription purchases and renewals</li>
+                        <li>Verify subscription status</li>
+                        <li>Provide customer support</li>
+                    </ul>
+                </li>
+                <li><strong>Communicate with You:</strong>
+                    <ul>
+                        <li>Respond to your inquiries and support requests</li>
+                        <li>Send you important updates about the App</li>
+                        <li>Provide customer service</li>
+                    </ul>
+                </li>
+                <li><strong>Analytics and Improvement:</strong>
+                    <ul>
+                        <li>Analyze App usage to improve functionality</li>
+                        <li>Monitor App performance and fix bugs</li>
+                        <li>Conduct research and analytics</li>
+                    </ul>
+                </li>
+                <li><strong>Legal Compliance:</strong>
+                    <ul>
+                        <li>Comply with applicable laws and regulations</li>
+                        <li>Respond to legal requests</li>
+                        <li>Protect our rights and prevent fraud</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section id="ai-services">
+            <h2><i class="fas fa-robot"></i> Data Processing and AI Services</h2>
+            
+            <div class="info-card">
+                <h3><i class="fas fa-brain"></i> OpenAI Integration</h3>
+                <p>When you use AI features (scenario generation, profile review, coaching), your content is sent to OpenAI for processing. This includes:</p>
+                <ul>
+                    <li>Text you input for coaching conversations</li>
+                    <li>Images you upload for profile review or screenshot analysis</li>
+                    <li>Voice recordings (when using Voice Mode)</li>
+                </ul>
+                <p><strong>Important:</strong></p>
+                <ul>
+                    <li>Your content is processed by OpenAI but not stored on their servers beyond what is necessary for processing</li>
+                    <li>We use OpenAI's moderation API to filter inappropriate content</li>
+                    <li>Your data is transmitted securely using encryption</li>
+                </ul>
+            </div>
+
+            <h3><i class="fas fa-filter"></i> Content Moderation</h3>
+            <p>We use AI moderation to filter inappropriate, harmful, or offensive content before it is processed or displayed. This helps maintain a safe environment for all users.</p>
+        </section>
+
+        <section id="data-sharing">
+            <h2><i class="fas fa-share-alt"></i> Data Sharing and Disclosure</h2>
+            <div class="info-card success">
+                <p><strong><i class="fas fa-check-circle"></i> We do not sell your personal information.</strong></p>
+            </div>
+            <p>We may share your information only in the following circumstances:</p>
+            <ol>
+                <li><strong>Service Providers:</strong> We may share information with third-party service providers who perform services on our behalf, including:
+                    <ul>
+                        <li>Adapty (subscription management)</li>
+                        <li>OpenAI (AI processing)</li>
+                        <li>Firebase (analytics, if enabled)</li>
+                        <li>Cloud hosting providers</li>
+                    </ul>
+                </li>
+                <li><strong>Legal Requirements:</strong> We may disclose information if required by law, court order, or government regulation.</li>
+                <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred to the acquiring entity.</li>
+                <li><strong>With Your Consent:</strong> We may share information with your explicit consent.</li>
+            </ol>
+        </section>
+
+        <section id="security">
+            <h2><i class="fas fa-lock"></i> Data Security</h2>
+            <p>We implement appropriate technical and organizational measures to protect your information, including:</p>
+            <ul>
+                <li><i class="fas fa-check" style="color: var(--success-color);"></i> Encryption of data in transit (HTTPS/TLS)</li>
+                <li><i class="fas fa-check" style="color: var(--success-color);"></i> Secure storage of sensitive information</li>
+                <li><i class="fas fa-check" style="color: var(--success-color);"></i> Access controls and authentication</li>
+                <li><i class="fas fa-check" style="color: var(--success-color);"></i> Regular security assessments</li>
+            </ul>
+            <div class="info-card warning">
+                <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+            </div>
+        </section>
+
+        <section id="your-rights">
+            <h2><i class="fas fa-user-shield"></i> Your Rights and Choices</h2>
+            <p>You have the following rights regarding your personal information:</p>
+            <ol>
+                <li><strong>Access:</strong> You can request access to the personal information we hold about you.</li>
+                <li><strong>Correction:</strong> You can update or correct your information through the App settings.</li>
+                <li><strong>Deletion:</strong> You can request deletion of your account and associated data by contacting us.</li>
+                <li><strong>Consent Withdrawal:</strong> You can withdraw consent for data processing at any time through App settings or by contacting us.</li>
+                <li><strong>Opt-Out:</strong> You can opt out of analytics and non-essential data collection through App settings.</li>
+                <li><strong>Data Portability:</strong> You can request a copy of your data in a portable format.</li>
+            </ol>
+            <p>To exercise these rights, please contact us at the email address provided below.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-child"></i> Children's Privacy</h2>
+            <p>Our App is not intended for users under the age of 18. We do not knowingly collect personal information from children under 18. If you believe we have collected information from a child under 18, please contact us immediately, and we will delete such information.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-globe"></i> International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have data protection laws that differ from those in your country. By using our App, you consent to the transfer of your information to these countries.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-clock"></i> Data Retention</h2>
+            <p>We retain your information for as long as necessary to provide our services and fulfill the purposes described in this Privacy Policy, unless a longer retention period is required by law. When you delete your account, we will delete or anonymize your personal information, except where we are required to retain it for legal purposes.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-link"></i> Third-Party Links and Services</h2>
+            <p>Our App may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to read their privacy policies.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-sync-alt"></i> Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy in the App and updating the "Last Updated" date. Your continued use of the App after such changes constitutes acceptance of the updated Privacy Policy.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-handshake"></i> Your Consent</h2>
+            <p>By using our App, you consent to our Privacy Policy and agree to its terms. If you do not agree, please do not use the App.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            <a href="mailto:ashobal@sinfosecurity.com">
+                <i class="fas fa-paper-plane"></i>
+                ashobal@sinfosecurity.com
+            </a>
+            <p style="margin-top: 20px; opacity: 0.9;">
+                <i class="fas fa-headset"></i> App Support: Available through the App settings
+            </p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-map-marker-alt"></i> Additional Information for Specific Regions</h2>
+            
+            <h3><i class="fas fa-sun"></i> California Residents (CCPA)</h3>
+            <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to delete personal information, and the right to opt-out of the sale of personal information <span class="highlight">(we do not sell personal information)</span>.</p>
+
+            <h3><i class="fas fa-flag"></i> European Union Residents (GDPR)</h3>
+            <p>If you are located in the European Union, you have additional rights under the General Data Protection Regulation (GDPR), including the right to access, rectify, erase, restrict processing, object to processing, and data portability. Our legal basis for processing your data includes consent, contract performance, and legitimate interests.</p>
+        </section>
+
+        <div class="footer">
+            <p><strong>Effective Date:</strong> December 25, 2025</p>
+            <p><strong>App Name:</strong> DatePilot (Dating Scenario)</p>
+            <p><strong>Developer:</strong> Sinfosecurity</p>
+        </div>
+    </div>
+</body>
+</html>
+
