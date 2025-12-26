@@ -159,7 +159,7 @@ By using our App, you consent to our Privacy Policy and agree to its terms. If y
 
 If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
 
-**Email:** privacy@datescenario.app  
+**Email:** ashobal@sinfosecurity.com  
 **App Support:** Available through the App settings
 
 ## Additional Information for Specific Regions
